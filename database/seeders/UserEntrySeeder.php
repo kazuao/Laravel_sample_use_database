@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\UserEntry;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -14,9 +15,9 @@ class UserEntrySeeder extends Seeder
      */
     public function run()
     {
-        DB::table('user_entry')->insert([
-            'title' => "ダミータイトル",
-            'body' => "ダミー本文",
+        UserEntry::create([
+            "title" => "hogehoge",
+            "body" => "fugafuga",
         ]);
     }
 }

@@ -15,6 +15,8 @@ class CreateUserEntryTable extends Migration
     {
         Schema::create('user_entry', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('body');
             $table->timestamps();
         });
     }
